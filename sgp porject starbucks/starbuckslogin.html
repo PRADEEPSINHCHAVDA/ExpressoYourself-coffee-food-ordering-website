@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Account sign in:Starbucks Coffee Company</title>
+ <style>
+     body{margin: 0px;font-family: Arial;}
+     *{box-sizing: border-box;}
+     .main{width: 100%;height: 100vw;display: flex;flex-wrap: wrap;position: relative;}
+     .left{flex: 40%;border-right: 1px solid rgb(184, 182, 182);box-shadow: 0px 0px 2px rgba(0,0,0,0.5) ;}
+     .right{flex: 60%;background-color: #eeee;height: 190vh;}
+     .frm{width: 400px; padding: 80px;margin-top: 60px;margin-left: 150px;}
+
+     .tbl1{margin: 100px;}
+     .btn{width: 100px;padding: 15px;background-color: #00a862;border: 0px;border-radius: 50px;color: white;
+     font-weight: bold;font-size: 18px;box-shadow:0px  5px 5px rgba(48, 49, 49, 0.5) ;margin-left: 200px;}
+     .txt{width: 280px;padding: 14px;background-color: #eeee;border: 0px;font-size: 16px;
+     border-bottom: 2px solid rgb(204, 199, 199);}
+     .center{width: 100%;padding: 3px;font-size: 12px; background-color: rgb(45,41,38);color: white;margin-top: -30px;}
+     .cont{width: 100%;height: 350px;margin-top: 60px;}
+    .btn1{width: 100px;padding: 14px;border: 1px solid black;color: black;border-radius: 50px;margin-left: 250px;
+    font-weight: bold;}
+    .footer{width: 100%;background-color: white;height: 400px;}
+    .btn2{width: 120px;padding: 14px;border: 1px solid green;color: green;border-radius: 50px;margin-left: 50px;
+    font-weight: bold;float: left;margin-top: 15px;}
+    .color {
+        color: red
+    }
+ </style>
+</head>
+<body>
+ <div class="main">
+     <div class="left">
+         <img src="stblogo.png" width="91px" height="66px" style="margin-left: 20px; margin-top: 20px;">
+       <h2 style="margin-top: 290px; margin-left: 60px;font-weight: bold;"> Sign in or create an account 🌟</h2></div>
+     <div class="right">
+        <form class="frm" id="frm">
+            <table class="tbl">
+             <tr><td> 
+                     <input type="text" name="un" placeholder="Username or email address" class="txt" id="uns">
+                </td>
+                <td>
+                    <div id="errorun" class="color"></div>
+                </td>
+            </tr> 
+                <tr>
+                    <td> 
+                        <input type="password" name="pwd"  placeholder="Password" class="txt" id="pass" onkeyup="valid()">
+                    </td>
+                    <td>
+                        <div id="errorpwd" class="color"></div>
+                    </td>
+                </tr>  
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td><input type="checkbox">Keep me signed in
+                            <a href="" style="color: green;text-decoration: none;">Details</a> </td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td><a href="" style="color: green;">Forget your username?</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" style="color: green;">Forget your password?</a></td>
+                    </tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr><td>&nbsp;</td></tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="Sign up" class="btn" onclick="valid()">
+                        </td>
+                    </tr>
+            </table>
+
+        </form>
+        <div class="center">
+            <h3 style="margin-left: 320px;">JOIN  STARBUCKS®  REWARDS</h3>
+        </div>
+        <div class="cont">
+            <button class="btn1">Join now</button>
+            <h1 style="margin-left: 250px;">Create an account and bring on <br>the Rewards!</h1>
+            <p style="margin-left: 250px;">Join Starbucks® Rewards to earn free food and<br>
+                 drinks, get free refills, pay and order with your<br> phone, and more.</p>
+        </div>
+
+        <div class="footer">
+            <button class="btn2">Find a store</button>
+            <ul style="list-style-type: none;padding: 5px;margin-left: 250px;font-size: 14px;margin-top: 15px;">
+                <li><a href="" style="text-decoration: none;color: black;">Responsibility</a></li>
+                <li>&nbsp;</li>
+                <li><a href="" style="text-decoration: none;color: black;">Web Accessibility</a></li>
+                <li>&nbsp;</li>
+                <li><a href="" style="text-decoration: none;color: black;">Privacy Policy</a></li>
+                <li>&nbsp;</li>
+                <li><a href="" style="text-decoration: none;color: black;">Terms of Use</a></li>
+            </ul>
+            <p style="margin-left: 60px;">© 2020 Starbucks</p>
+        </div>
+     </div>
+ </div>
+ <script>
+    function valid() {
+        var u = document.frm.un.value;
+        var p = document.frm.pwd.value;
+      
+        if (u == "") {
+            document.getElementById('errorun').innerHTML = "<img src='FAIL.png' width='20px' height='20px'>";
+            document.getElementById('uns').style.borderBottom = "2px solid red";
+        } else {
+            document.getElementById('errorun').innerHTML = " <img src='SUCCESS.png' width='20px' height='20px'>";
+            document.getElementById('uns').style.borderBottom = "2px solid green";
+        }
+        if (p == "") {
+            document.getElementById('errorpwd').innerHTML = "<img src='FAIL.png' width='20px' height='20px'>";
+            document.getElementById('pass').style.borderBottom = "2px solid red";
+        } else {
+            document.getElementById('errorpwd').innerHTML = " <img src='SUCCESS.png' width='20px' height='20px'>";
+            document.getElementById('pass').style.borderBottom = "2px solid green";
+          
+        }
+        }
+</script>
+
+</body>
+</html>

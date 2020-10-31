@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Star Menu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+         body{margin: 0px;background-color: white;font-family: Arial;}
+        *{box-sizing: border-box;}
+        .header{width: 100%;display: flex;justify-content: space-between;
+        padding: 20px;border-bottom: 1px solid #eee;position: sticky;}
+        .menu{align-items: center;}
+        span a{text-decoration: none;color: black;font-weight: bold;padding: 10px 20px;
+        font-size: 13px;}
+        span a:hover{color: green;}
+        .a{border-radius: 30px;font-weight: bold;background-color: white;color: black; padding: 10px;}
+        .b{border-radius: 30px;font-weight: bold;background-color: black;color: white; padding: 10px;}
+      
+        .f{padding: 20px;}
+        .header2{width: 100%;background-color: rgb(187, 185, 185);padding: 5px;padding-left: 60px;
+        position: sticky;}
+        .header2 span a{text-decoration: none;font-weight: normal;}
+        .main1{width: 100%;display: flex;opacity: 0;}
+        .left1{width: 100%;flex: 25%;font-weight: lighter;color: grey;list-style: none;padding-left: 150px;}
+        
+        .right1{width: 100%;flex: 75%;align-items: center;}
+        .main7{width: 100% ;margin-top: 100px;}
+        .abc{color: black;font-weight: bold;font-size: large;}
+        .one{font-weight: lighter;float: left;list-style: none;color: grey;padding-right: 70px;
+        margin-left: 70px;}
+        .two{font-weight: lighter;float: left;list-style: none;color: grey;padding-right: 70px;}
+        .three{font-weight: lighter;float: left;list-style: none;color: grey;padding-right: 70px;}
+        .four{font-weight: lighter;float: left;list-style: none;color: grey;padding-right: 70px;}
+        .five{font-weight: lighter;float: left;list-style: none;color: grey;padding-right: 70px;}
+        .img{border-radius: 50%;float: left;}
+        .st{float: left;}
+        .tbl{margin-top: 70px;margin-left: 100px;}
+        .stl{padding: 50px;font-weight: normal;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="menu"><img src="stblogo.png" width="91px" height="66px">
+        <a href="#" onclick="myFunction()">MENU</a>
+        <a href="#">REWARDS</a>
+        <a href="#">GIFT CARDS</a></span>
+        <span class="f"><img src="location.jpg" width="20px" height="20px">Find A Store
+        <input type="button" value="Sign In" class="a">
+        <input type="button" value="Join Now" class="b"></span>
+    </div> 
+    <div class="header2" >
+        <span>
+        <a href="#"><u>All products</u></a>
+        <a href="#">Featured</a>
+        <a href="#">Previous Orders</a>
+        <a href="#">Favourite Products</a></span>
+    </div>
+    <div class="main1" id="dis">
+        <div class="left1">
+            <ul class="a">Drinks</ul><br>
+            <li>Hot Coffees</li><br>
+            <li>Hot Teas</li><br>
+            <li>Hot Drinks</li><br>
+            <li>Frapuccino <br>Blended Beverages</li><br>
+            <li>Cold Coffees</li><br>
+            <li>Iced Teas</li><br>
+            <li>Cold Drinks</li><br>
+            <ul class="a">Food</ul><br>
+            <li>Hot Breakfast</li><br>
+            <li>Bakery</li><br>
+            <li>Lunch</li><br>
+            <li>Snacks & Sweets</li><br>
+            <li>Yogurt & Custard</li><br>
+            <ul class="a">At Home Coffee</ul><br>
+            <li>Whole Bean</li><br>
+            <li>Verismo Pods</li><br>
+            <li>Via Instant</li><br>
+            <li>Cold Brew</li><br>
+            <ul class="a">Shopping Bags</ul><br>
+            <li>Shopping Bags</li>
+        </div>
+        <div class="right1">
+           <h1>Menu</h1> 
+           <h2>Drinks</h2>
+           <hr>
+           <form>
+               <table class="tbl">
+               <tr>
+           <td class="stl"><img src="menu1.jpeg" width="150px" height="150px" class="img"></td>
+           <td class="stl"><h3 class="st">Hot Coffees</h3></td>
+           <td class="stl"><img src="menu2.jpeg" width="150px" height="150px" class="img"></td>
+           <td class="stl"><h3 class="st">Hot Teas</h3></td>
+               </tr>
+               <tr>
+                <td class="stl"><img src="menu3.jpeg" width="150px" height="150px" class="img"></td>
+                <td class="stl"><h3 class="st">Hot Drinks</h3></td>
+                <td class="stl"><img src="menu4.jpeg" width="150px" height="150px" class="img"></td>
+                <td class="stl"><h3 class="st">Frapuccino & Beverages</h3></td>
+               </tr>
+               <tr>
+                <td class="stl"><img src="menu5.jpeg" width="150px" height="150px" class="img"></td>
+                <td class="stl"><h3 class="st">Cold Coffees</h3></td>
+                <td class="stl"><img src="menu6.jpeg" width="150px" height="150px" class="img"></td>
+                <td class="stl"><h3 class="st">Iced Teas</h3></td>
+               </tr>
+               <tr>
+                <td class="stl"><img src="menu7.jpeg" width="150px" height="150px" class="img"></td>
+                <td class="stl"><h3 class="st">Cold Drinks</h3></td>
+               </tr>
+               </table>
+            </form>
+            <h2>Food</h2>
+            <hr>
+            <form>
+                <table class="tbl">
+                <tr>
+            <td class="stl"><img src="menu8.jpeg" width="150px" height="150px" class="img"></td>
+            <td class="stl"><h3 class="st">Hot Breakfast</h3></td>
+            <td class="stl"><img src="menu9.jpeg" width="150px" height="150px" class="img"></td>
+            <td class="stl"><h3 class="st">Bakery</h3></td>
+                </tr>
+                <tr>
+                 <td class="stl"><img src="menu10.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Lunch</h3></td>
+                 <td class="stl"><img src="menu11.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Snacks & Sweets</h3></td>
+                </tr>
+                <tr>
+                 <td class="stl"><img src="menu12.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Yogurt & Custard</h3></td>
+                </tr>
+                </table>
+             </form>
+             <h2>At Home Coffee</h2>
+            <hr>
+            <form>
+                <table class="tbl">
+                <tr>
+            <td class="stl"><img src="menu13.jpg" width="150px" height="150px" class="img"></td>
+            <td class="stl"><h3 class="st">Whole Bean</h3></td>
+            <td class="stl"><img src="menu14.jpeg" width="150px" height="150px" class="img"></td>
+            <td class="stl"><h3 class="st">Verismo Pods</h3></td>
+                </tr>
+                <tr>
+                 <td class="stl"><img src="menu15.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Via Instant</h3></td>
+                 <td class="stl"><img src="menu16.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Cold Brew</h3></td>
+                </tr>
+                </table>
+             </form>
+             <h2>Shopping Bags</h2>
+             <hr>
+             <form>
+                <table class="tbl">
+                <tr>
+                <tr>
+                 <td class="stl"><img src="menu17.jpeg" width="150px" height="150px" class="img"></td>
+                 <td class="stl"><h3 class="st">Shopping Bags</h3></td>
+                </tr>
+                </table>
+             </form>
+        </div>
+    </div>
+    <div class="main7">
+        <div class="one">
+        <ul class="abc">About Us</ul><br><br>
+        <li>Our Heritage</li><br>
+        <li>Our Coffee</li><br>
+        <li>Stories and News</li><br>
+        <li>Investor Relations</li><br>
+        <li>Policies and Standards</li><br>
+        <li>Customer Service</li></div>
+        <div class="two">
+        <ul class="abc">Careers</ul><br><br>
+        <li>Culture and Values</li><br>
+        <li>Diversity and Inclusion</li><br>
+        <li>College Achievement Plan</li><br>
+        <li>U.S. Careers</li><br>
+        <li>International Careers</li></div>
+        <div class="three">
+        <ul class="abc">Social Impact</ul><br><br>
+        <li>Ethical Sourcing</li><br>
+        <li>Leading in Sustainability</li><br>
+        <li>Strengthening <br>Communities</li><br>
+        <li>Creating Opportunities</li><br>
+        <li>Global Social Impact<br> Report</li><br>
+        <li>For Business Partners</li><br> </div>
+        <div class="four">
+            <ul class="abc">For Business Partners</ul><br><br>
+            <li>Landlord Support Center</li><br>
+            <li>Suppliers</li><br>
+            <li>Corporate Gift Card Sales</li>
+        </div>
+        <div class="five">
+            <ul class="abc">Ways To Order</ul><br><br>
+
+            <li>Order on the Web</li><br>
+            <li>Download the App</li><br>
+            <li>Delivery</li><br>
+            <li>Google Assistant</li> 
+        </div>
+    </div>
+    <script>
+ 
+        function myFunction() {
+  document.getElementById('dis').style.opacity="1";
+}
+    </script>
+</body>
+</html>

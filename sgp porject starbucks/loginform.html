@@ -1,0 +1,144 @@
+,<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+</head>
+<style>
+    .color {
+        color: red
+    }
+    body{margin: 0;background-color: white}
+    *{box-sizing: border-box;}
+    .header{
+            width: 100%;border-bottom: 1px solid #eeeeee;display: flex;justify-content: space-between;padding: 0px;
+        }
+    .frm1{width:400px;padding:40px; border: 1px solid #cccccc;box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    border-top-left-radius: 100px;border-bottom-right-radius: 100px;}
+    .tbl{width: 100%;}
+    .txt{width: 100%;padding: 15px;border: 1px solid #eee;border-radius: 6px;outline: none;}
+    .btn{width: 100%;padding: 15px;border: 1px solid #eee;border-radius: 6px;outline: none;background-color:#00a862;}
+    .btn:hover{color: #fff;}
+    .main{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+    h1{margin: 2px;display: flex;justify-content: center;}
+</style>
+
+<body>
+    <!-- <button onclick="red()">red</button>
+    <button onclick="green()">green</button>
+    <button onclick="blue()">blue</button> -->
+    
+    <div class="header">
+        <span>
+            <img src="stblogo.png" width="91px" height="66px">      
+        </span>
+        
+    <div class="main">
+        <h1> Create an account</h1>
+
+    <form class="frm1" name="frm" id="frmid" action="connect.php" method="POST">
+        <table class="tbl">
+         
+            <tr>
+                <td>
+                    <h2 id="h">Personal information </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="txt" placeholder="enter firstname" name="first name" id="first name" >
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="txt" placeholder="enter lastname"  name="Last name" id="last name">
+                </td>
+            <tr>
+                <td>
+                    <h2 id="h">Account security</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="txt" name="email" placeholder="enter email" id="email">
+                </td>
+                <td>
+                    <div id="errorun" class="color"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" class="txt" name="password" placeholder="enter password" id="password" onkeyup="valid()">
+                </td>
+                <td>
+                    <tr>
+                        <td align="right"><a href="#">forgot password..?</a></td>
+                    </tr>
+            
+                    <div id="errorpwd" class="color"></div>
+                </td>
+                <td>
+                    <div id="len"></div>
+                </td>
+            </tr>
+                 <tr><td>&nbsp;</td></tr>
+            <tr>
+                <td>
+                    <input type="button" value="submit" class="btn" onclick="valid()">
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+    <script>
+        function valid() {
+            var u = document.frm.email.value;
+            var p = document.frm.password.value;
+            var l = p.length;
+            if (u == "") {
+                document.getElementById('errorun').innerHTML = "<img src='FAIL.png' width='20px' height='20px'>";
+                document.getElementById('email').style.borderBottom = "2px solid red";
+            } else {
+                document.getElementById('errorun').innerHTML = " <img src='SUCCESS.png' width='20px' height='20px'>";
+                document.getElementById('email').style.borderBottom = "2px solid green";
+            }
+            if (p == "") {
+                document.getElementById('errorpwd').innerHTML = "<img src='FAIL.png' width='20px' height='20px'>";
+                document.getElementById('password').style.borderBottom = "2px solid red";
+            } else {
+                document.getElementById('errorpwd').innerHTML = " <img src='SUCCESS.png' width='20px' height='20px'>";
+                document.getElementById('password').style.borderBottom = "2px solid green";
+                document.getElementById('len').innerHTML = l;
+            }
+
+
+            if (l <= 2) {
+                document.getElementById('errorpwd').innerHTML = "weak";
+            }
+            else if (l > 2 && l < 6) {
+                document.getElementById('errorpwd').innerHTML = "moderate";
+            }
+            else {
+                document.getElementById('errorpwd').innerHTML = "strong";
+            }
+        }
+        // function red()
+        // {
+        //     document.getElementById('frmid').style.backgroundColor="red";
+        // }
+        // function green()
+        // {
+        //     document.getElementById('frmid').style.backgroundColor="pink";
+        // }
+        // function blue()
+        // {
+        //     document.getElementById('frmid').style.backgroundColor="yellow";
+        // }
+    </script>
+    </div>
+</body>
+
+</html>
