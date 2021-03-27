@@ -1,4 +1,7 @@
+          Improvisation of food, drink ordering website. 
+          
           ABSTRACT
+          
  Analyzing “The Improvising Starbucks Experience” is a pedagogical approach to reinforcing the concepts of control and management of quality, service reliability, and efficient operations in action. The main objective of Starbucks is to fulfil its customer's needs and requirements by giving order on website.As the coronavirus pandemic spread across world, customers are wary whether to visit the starbuck stores is safe or not.In this competitive world, where people are working hard to achieve their goals, many people don’t get time to cook food for themselves. As the expenses has increased, men and women both work in order to balance their livelihood. Hence, people prefer to buy food from the restraunts and cafes. A website through which people can order online and get their orders delivered at home. This saves both time and money of the customers. 
 
           KEYWORDS
